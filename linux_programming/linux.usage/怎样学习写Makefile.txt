@@ -1,0 +1,4 @@
+<<GNU make¼òÃ÷ÊÖ²á.pdf>>³Âð©
+MYVAR:=123
+test:
+	echo $(MYVAR)

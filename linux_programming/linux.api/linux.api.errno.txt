@@ -1,0 +1,9 @@
+<sys/errno.h>
+	<errno.h>
+		<bits/errno.h>
+			<linux/errno.h>
+				<asm/errno.h>
+					<asm-generic/errno.h>	EDEADLK 35 - ERFKILL 132
+						<asm-generic/errno-base.h>	EPERM 1 - ERANGE 34
+
+

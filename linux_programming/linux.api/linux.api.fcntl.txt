@@ -1,0 +1,12 @@
+fcntl
+F_GETFL
+F_SETFL
+O_NONBLOCK
+
+Fcntl.h	Include	7474	2011-1-5
+Fcntl.h	include\Asm	292	2011-1-4
+Fcntl.h	include\Asm-generic	3641	2011-1-4
+Fcntl.h	include\Bits	9706	2011-1-5
+Fcntl.h	include\Linux	1466	2011-1-4
+Fcntl.h	include\Sys	19	2011-1-5
+Fcntl2.h	include\Bits	5607	2011-1-5

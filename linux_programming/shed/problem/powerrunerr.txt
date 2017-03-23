@@ -1,0 +1,493 @@
+# 
+
+U-Boot 2010.06 (Nov 02 2012 - 17:04:29)
+
+ETH FastBoot:  V3.0
+Machine ID:    8000 v0
+
+
+************************************************************
+*                                                        *
+* V100 u-boot 1.0.0      Build Date: Nov  2 2012, 17:04:49 *
+*                                                                                       *
+************************************************************
+
+
+Serial Number: godbox
+
+DRAM:  256 MiB
+NAND:  Special Nand id table Version 1.35
+Nand ID: 0x2C 0xF1 0x80 0x95 0x02 0x00 0x00 0x00
+Nand(Hardware): Block:128KB Page:2KB Chip:128MB*1 OOB:64B ECC:1bit 
+128 MiB
+Can't find a valid spi flash chip.
+MMC:   Card did not respond to voltage select!
+No EMMC device found!!!
+In:    serial
+Out:   serial
+Err:   serial
+ Hd_format index = 6
+g_gfxMode: WBC Mode 
+JPG_Decode(): Line 738 : Hard dec 
+Do not include fastplay data
+get_fastPlay_playMemInfo,1094: 
+can not find PlayParam
+CHIP_TYPE: Hi3716M(0x0)_v101
+before sync bootargs
+u32ParamCrcOri = 0x29f4bbe3, u32ParamCrc = 0x29f4bbe3,
+u32ParamBakCrcOri = 0x29f4bbe3, u32ParamBakCrc = 0x29f4bbe3,
+CFG_ENV_SIZE = 0x20000
+sync bootargs seccuss
+after sync bootargs
+
+=====================
+strBootargs = mem=128M console=ttyAMA0,115200 root=/dev/mtdblock10 rootfstype=yaffs2 mtdparts=hinand:1M(boot),512K(bootargs),512K(bootargsbak),512K(stbid),512K(baseparam),512K(loaderdb),512K(loaderdbbak),8M(loader),8M(loaderbak),5M(kernel),40M(rootfs),35M(app),10M(ui),2M(logo),4M(fastplay),-(others) mmz=ddr,0,0x88000000,128M
+
+=====================
+Loader_Main->1049, get bootarges mem=128M console=ttyAMA0,115200 root=/dev/mtdblock10 rootfstype=yaffs2 mtdparts=hinand:1M(boot),512K(bootargs),512K(bootargsbak),512K(stbid),512K(baseparam),512K(loaderdb),512K(loaderdbbak),8M(loader),8M(loaderbak),5M(kernel),40M(rootfs),35M(app),10M(ui),2M(logo),4M(fastplay),-(others) mmz=ddr,0,0x88000000,128M
+[HI_LOADER_ReadOTAInfo78]       HI_LOADER_ReadOTAInfo IN FASTBOOT3.0
+[HI_LOADER_ReadOTAInfo118]      crc = 0x07973517        basicInfo->u32Crc = 0x07973517
+pt6961_HI_KEYLED_Open 
+> keyled_display_addr_inc: 389
+> keyled_display_addr_inc: 389
+Press Menu key to force upgrade or timeout to normal upgrade/big kernel!
+[Loader_Check880]       u32KeyValue = 0x0
+[Loader_Check880]       u32KeyValue = 0x0
+[Loader_Check880]       u32KeyValue = 0x0
+[Loader_Check880]       u32KeyValue = 0x0
+[Loader_Check880]       u32KeyValue = 0x0
+[Loader_Check880]       u32KeyValue = 0x0
+[Loader_Check880]       u32KeyValue = 0x0
+[Loader_Check880]       u32KeyValue = 0x0
+[Loader_Check880]       u32KeyValue = 0x0
+[Loader_Check880]       u32KeyValue = 0x0
+[Loader_Check880]       u32KeyValue = 0x0
+[Loader_Check880]       u32KeyValue = 0x0
+[Loader_Check880]       u32KeyValue = 0x0
+[Loader_Check880]       u32KeyValue = 0x0
+[Loader_Check880]       u32KeyValue = 0x0
+[Loader_Check880]       u32KeyValue = 0x0
+[Loader_Check880]       u32KeyValue = 0x0
+[Loader_Check880]       u32KeyValue = 0x0
+[Loader_Check880]       u32KeyValue = 0x0
+[Loader_Check880]       u32KeyValue = 0x0
+Loader_Check->975 db.eUpdateType = 0x2
+Loader_Check->994 start 'kernel'.
+booting kernel
+The value that loader_Check returned is kernel
+Loading 'kernel' image.
+'kernel'->ih_size = 0x349d88 
+Partation:kernel  read size = 0x34a000
+Press Ctrl+C to stop autoboot
+## Booting kernel from Legacy Image at 82000000 ...
+   Image Name:   Linux-2.6.35.7_hisilicon
+   Image Type:   ARM Linux Kernel Image (uncompressed)
+   Data Size:    3448200 Bytes = 3.3 MiB
+   Load Address: 80800000
+   Entry Point:  80800000
+   Verifying Checksum ... OK
+   Loading Kernel Image ... OK
+OK
+
+Starting kernel ...
+
+Uncompressing Linux... done, booting the kernel.
+Linux version 2.6.35.7_hisilicon (root@localhost.localFedora9) (gcc version 4.4.1 (Hisilicon_v200(gcc4.4-290+glibc-2.11+eabi+nptl)) ) #2 Fri Feb 1 16:54:48 CST 2013
+CPU: ARMv7 Processor [412fc092] revision 2 (ARMv7), cr=10c53c7f
+CPU: VIPT nonaliasing data cache, VIPT nonaliasing instruction cache
+Machine: godbox
+Memory policy: ECC disabled, Data cache writeback
+CPU:Hi3716Mv100, Timer:100M
+Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 32512
+Kernel command line: mem=128M console=ttyAMA0,115200 root=/dev/mtdblock10 rootfstype=yaffs2 mtdparts=hinand:1M(boot),512K(bootargs),512K(bootargsbak),512K(stbid),512K(baseparam),512K(loaderdb),512K(loaderdbbak),8M(loader),8M(loaderbak),5M(kernel),40M(rootfs),35M(app),10M(ui),2M(logo),4M(fastplay),-(others) mmz=ddr,0,0x88000000,128M
+PID hash table entries: 512 (order: -1, 2048 bytes)
+Dentry cache hash table entries: 16384 (order: 4, 65536 bytes)
+Inode-cache hash table entries: 8192 (order: 3, 32768 bytes)
+Memory: 128MB = 128MB total
+Memory: 123388k/123388k available, 7684k reserved, 0K highmem
+Virtual kernel memory layout:
+    vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+    fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)
+    DMA     : 0xffc00000 - 0xffe00000   (   2 MB)
+    vmalloc : 0xc8800000 - 0xfe000000   ( 856 MB)
+    lowmem  : 0xc0000000 - 0xc8000000   ( 128 MB)
+    modules : 0xbf000000 - 0xc0000000   (  16 MB)
+      .init : 0xc0008000 - 0xc002b000   ( 140 kB)
+      .text : 0xc002b000 - 0xc05e2000   (5852 kB)
+      .data : 0xc0604000 - 0xc0638600   ( 210 kB)
+SLUB: Genslabs=11, HWalign=32, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+Hierarchical RCU implementation.
+        RCU-based detection of stalled CPUs is disabled.
+        Verbose stalled-CPUs detection is disabled.
+NR_IRQS:128
+Console: colour dummy device 80x30
+Calibrating delay loop... 1199.30 BogoMIPS (lpj=5996544)
+pid_max: default: 32768 minimum: 301
+Mount-cache hash table entries: 512
+CPU: Testing write buffer coherency: ok
+NET: Registered protocol family 16
+Serial: AMBA PL011 UART driver
+uart:0: ttyAMA0 at MMIO 0x101fb000 (irq = 59) is a AMBA/PL011
+console [ttyAMA0] enabled
+bio: create slab <bio-0> at 0
+SCSI subsystem initialized
+usbcore: registered new interface driver usbfs
+usbcore: registered new interface driver hub
+usbcore: registered new device driver usb
+Advanced Linux Sound Architecture Driver Version 1.0.23.
+Bluetooth: Core ver 2.15
+NET: Registered protocol family 31
+Bluetooth: HCI device and connection manager initialized
+Bluetooth: HCI socket layer initialized
+cfg80211: Calling CRDA to update world regulatory domain
+Switching to clocksource timer1
+NET: Registered protocol family 2
+IP route cache hash table entries: 1024 (order: 0, 4096 bytes)
+TCP established hash table entries: 4096 (order: 3, 32768 bytes)
+TCP bind hash table entries: 4096 (order: 2, 16384 bytes)
+TCP: Hash tables configured (established 4096 bind 4096)
+TCP reno registered
+UDP hash table entries: 256 (order: 0, 4096 bytes)
+UDP-Lite hash table entries: 256 (order: 0, 4096 bytes)
+NET: Registered protocol family 1
+RPC: Registered udp transport module.
+RPC: Registered tcp transport module.
+RPC: Registered tcp NFSv4.1 backchannel transport module.
+L2cache cache controller enabled
+VFS: Disk quotas dquot_6.5.2
+Dquot-cache hash table entries: 1024 (order 0, 4096 bytes)
+squashfs: version 4.0 (2009/01/31) Phillip Lougher
+JFFS2 version 2.2. (NAND) © 2001-2006 Red Hat, Inc.
+fuse init (API version 7.14)
+msgmni has been set to 240
+alg: No test for stdrng (krng)
+Block layer SCSI generic (bsg) driver version 0.4 loaded (major 253)
+io scheduler noop registered
+io scheduler deadline registered (default)
+io scheduler cfq registered
+brd: module loaded
+loop: module loaded
+mtdoops: mtd device (mtddev=name/number) must be supplied
+physmap platform flash device: 02000000 at 34000000
+physmap-flash physmap-flash.0: map_probe failed
+Check Spi Flash Controller V300. Found
+Special nand id table Version 1.36
+Check Nand Flash Controller V301. Found
+Nand ID: 0x2C 0xF1 0x80 0x95 0x02 0x00 0x00 0x00
+Nand(Hardware): Block:128KB Page:2KB Chip:128MB OOB:64B ECC:1bit 
+NAND device: Manufacturer ID: 0x2c, Chip ID: 0xf1 (Micron NAND 128MiB 3,3V 8-bit)
+16 cmdlinepart partitions found on MTD device hinand
+Creating 16 MTD partitions on "hinand":
+0x000000000000-0x000000100000 : "boot"
+0x000000100000-0x000000180000 : "bootargs"
+0x000000180000-0x000000200000 : "bootargsbak"
+0x000000200000-0x000000280000 : "stbid"
+0x000000280000-0x000000300000 : "baseparam"
+0x000000300000-0x000000380000 : "loaderdb"
+0x000000380000-0x000000400000 : "loaderdbbak"
+0x000000400000-0x000000c00000 : "loader"
+0x000000c00000-0x000001400000 : "loaderbak"
+0x000001400000-0x000001900000 : "kernel"
+0x000001900000-0x000004100000 : "rootfs"
+0x000004100000-0x000006400000 : "app"
+0x000006400000-0x000006e00000 : "ui"
+0x000006e00000-0x000007000000 : "logo"
+0x000007000000-0x000007400000 : "fastplay"
+0x000007400000-0x000008000000 : "others"
+Fixed MDIO Bus: probed
+himii: probed
+Up port phy at 0x01 is connect
+Down port phy at 0x03 is connect
+Invalid HW-MAC Address: FF:FF:FF:FF:FF:FF
+Set Random MAC address: 36:89:44:71:94:DD
+usbmon: debugfs is not available
+usbcore: registered new interface driver cdc_acm
+cdc_acm: v0.26:USB Abstract Control Model driver for USB modems and ISDN adapters
+usbcore: registered new interface driver cdc_wdm
+Initializing USB Mass Storage driver...
+usbcore: registered new interface driver usb-storage
+USB Mass Storage support registered.
+usbcore: registered new interface driver ums-alauda
+usbcore: registered new interface driver ums-datafab
+usbcore: registered new interface driver ums-freecom
+usbcore: registered new interface driver ums-isd200
+usbcore: registered new interface driver ums-jumpshot
+usbcore: registered new interface driver ums-sddr09
+usbcore: registered new interface driver ums-sddr55
+usbcore: registered new interface driver usbserial
+USB Serial support registered for generic
+usbcore: registered new interface driver usbserial_generic
+usbserial: USB Serial Driver core
+USB Serial support registered for debug
+usbcore: registered new interface driver debug
+USB Serial support registered for GSM modem (1-port)
+usbcore: registered new interface driver option
+option: v0.7.2:USB Driver for GSM modems
+mice: PS/2 mouse device common for all mice
+Bluetooth: Generic Bluetooth USB driver ver 0.6
+usbcore: registered new interface driver btusb
+usbcore: registered new interface driver hiddev
+usbcore: registered new interface driver usbhid
+usbhid: USB HID core driver
+usbcore: registered new interface driver snd-usb-audio
+usbcore: registered new interface driver snd-usb-caiaq
+ALSA device list:
+  No soundcards found.
+GACT probability on
+Mirror/redirect action on
+Simple TC action Loaded
+Netfilter messages via NETLINK v0.30.
+nf_conntrack version 0.5.0 (1927 buckets, 7708 max)
+CONFIG_NF_CT_ACCT is deprecated and will be removed soon. Please use
+nf_conntrack.acct=1 kernel parameter, acct=1 nf_conntrack module option or
+sysctl net.netfilter.nf_conntrack_acct=1 to enable it.
+ctnetlink v0.93: registering with nfnetlink.
+xt_time: kernel timezone is -0000
+IPVS: Registered protocols ()
+IPVS: Connection hash table configured (size=4096, memory=32Kbytes)
+IPVS: ipvs loaded.
+ip_tables: (C) 2000-2006 Netfilter Core Team
+ipt_CLUSTERIP: ClusterIP Version 0.8 loaded successfully
+arp_tables: (C) 2002 David S. Miller
+TCP cubic registered
+NET: Registered protocol family 17
+Bridge firewalling registered
+Ebtables v2.0 registered
+Bluetooth: L2CAP ver 2.14
+Bluetooth: L2CAP socket layer initialized
+Bluetooth: SCO (Voice Link) ver 0.6
+Bluetooth: SCO socket layer initialized
+Bluetooth: RFCOMM TTY layer initialized
+Bluetooth: RFCOMM socket layer initialized
+Bluetooth: RFCOMM ver 1.11
+Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+Bluetooth: BNEP filters: protocol multicast
+Bluetooth: HIDP (Human Interface Emulation) ver 1.2
+lib80211: common routines for IEEE802.11 drivers
+VFP support v0.3: implementor 41 architecture 3 part 30 variant 9 rev 2
+drivers/rtc/hctosys.c: unable to open rtc device (rtc0)
+yaffs: dev is 32505866 name is "mtdblock10" rw
+yaffs: passed flags ""
+VFS: Mounted root (yaffs2 filesystem) on device 31:10.
+Freeing init memory: 140K
+
+            _ _ _ _ _ _ _ _ _ _ _ _
+            \  _  _   _  _ _ ___
+            / /__/ \ |_/
+           / __   /  -  _ ___
+          / /  / /  / /
+  _ _ _ _/ /  /  \_/  \_ ______
+___________\___\__________________
+
+Configuring dynamic linker:
+ldconfig: file /usr/lib/libhimount.so is truncated
+
+ldconfig: Cannot mmap file /usr/lib/libHA.AUDIO.AC3PASSTHROUGH.decode.so.
+
+[RCS]: /etc/init.d/S00devs
+[RCS]: /etc/init.d/S01udev
+[RCS]: /etc/init.d/S80network
+[RCS]: /etc/init.d/S90modules
+/etc/init.d/S90modules: line 3: telnetd: not found
+rmmod: can't unload 'ufsd': unknown symbol in module, or unknown parameter
+rmmod: can't unload 'ohci_hcd': unknown symbol in module, or unknown parameter
+rmmod: can't unload 'ehci_hcd': unknown symbol in module, or unknown parameter
+rmmod: can't unload 'png': unknown symbol in module, or unknown parameter
+rmmod: can't unload 'jpge': unknown symbol in module, or unknown parameter
+rmmod: can't unload 'jpeg': unknown symbol in module, or unknown parameter
+rmmod: can't unload 'hi_wdg': unknown symbol in module, or unknown parameter
+rmmod: can't unload 'hi_keyled': unknown symbol in module, or unknown parameter
+rmmod: can't unload 'hi_e2prom': unknown symbol in module, or unknown parameter
+rmmod: can't unload 'hi_cipher': unknown symbol in module, or unknown parameter
+rmmod: can't unload 'hi_ir': unknown symbol in module, or unknown parameter
+rmmod: can't unload 'hi_sci': unknown symbol in module, or unknown parameter
+rmmod: can't unload 'hifb': unknown symbol in module, or unknown parameter
+rmmod: can't unload 'hi_tuner': unknown symbol in module, or unknown parameter
+rmmod: can't unload 'hi_svdec': unknown symbol in module, or unknown parameter
+rmmod: can't unload 'hi_mpi': unknown symbol in module, or unknown parameter
+rmmod: can't unload 'hi_ndpt': unknown symbol in module, or unknown parameter
+rmmod: can't unload 'hi_otp': unknown symbol in module, or unknown parameter
+rmmod: can't unload 'tde': unk!!! Module himedia: init ok
+nown symbol in module, or unknown parameter
+rmmod: can't unload 'hi_i2c': unknown symbol in module, or unknown parameter
+rmmod: can't unload 'hi_gpioi2c': unknown symbol in module, or unknown parameter
+rmmod: can't unload 'hi_gpio': unknown symbol in module, or unknown parameter
+rmmod: can't unload 'hi_dmac/home/server192/Hi3716m/workspace/gjq/Hi3716XV100R001C00SPC0A1/source/msp/common/drv/mmz/mmz-userdev.c(729): <6>Hisilicon Media Memory Zone Manager stage 1
+': unknown symbo/home/server192/Hi3716m/workspace/gjq/Hi3716XV100R001C00SPC0A1/source/msp/common/drv/../../../msp_base/common/drv/mmz/media-mem.c(1267): <6>Hisilicon Media Memory Zone Manager state 0
+l in module, or unknown parameter
+rmmod: can't unload 'hi_c51': unknown symbol in module, or unknown parameter
+rmmod: can't unload 'hi_common': unknown symbol in module, or unknown parameter
+rmmod: can't unload 'hi_mmz': unknown symbol in module, or unknown parameter
+rmmod: can't unload 'hi_media': unknown symbol in module, or unknown parameter
+Module len 49542 truncated
+insmod: can't insert 'hi_common.ko': invalid module format
+hi_c51: Unknown symbol HI_LogOut (err 0)
+hi_c51: Unknown symbol SYS_GetChipVersion (err 0)
+insmod: can't insert 'hi_c51.ko': unknown symbol in module, or unknown parameterModule len 18771 truncated
+
+insmod: can't insert 'hi_dmac.ko': invalid module format
+hi_gpio: Unknown symbol HI_LogOut (err 0)
+hi_gpio: Unknown symbol SYS_GetChipVersion (err 0)
+insmod: can't insert 'hi_gpio.ko': unknown symbol in module, or unknown parameter
+insmod: can't insert 'hi_gpioi2c.ko': No such file or directohi_i2c: Unknown symbol HI_LogOut (err 0)
+ry
+hi_i2c: Unknown symbol gpio_i2c_read_ext (err 0)
+hi_i2c: Unknown symbol SYS_GetChipVersion (err 0)
+hi_i2c: Unknown symbol CMPI_PROC_AddModule (err 0)
+hi_i2c: Unknown symbol gpio_i2c_write_ext (err 0)
+hi_i2c: Unknown symbol CMPI_PROC_RemoveModule (err 0)
+hi_i2c: Unknown symbol gpio_i2c_ioctl (err 0)
+hi_i2c: Unknown symbol g_stI2cGpio (err 0)
+hi_i2c: Unknown symbol gpio_i2c_close (err 0)
+hi_i2c: Unknown symbol CMPI_UnRegisterDevice (err 0)
+hi_i2c: Unknown symbol CMPI_RegisterDevice (err 0)
+insmod: can't insert 'hi_i2c.ko': unknown symbol in module, or unknown parameter
+tde: Unknown symbol SYS_GetChipVersion (err 0)
+insmod: can't insert 'tde.ko': unknown symbol in module, or unknown parameter
+insmod: can't insert 'hi_otp.ko': No such file or directory
+insmod: can't insert 'hi_ndpt.ko': No such file or directory
+hi_mpi: Unknown symbol CMPI_PROC_AddModule (err 0)
+hi_mpi: Unknown symbol CMPI_STAT_Event (err 0)
+hi_mpi: Unknown symbol dmac_channelclose (err 0)
+hi_mpi: Unknown symbol hi_gpio_dirset_bit (err 0)
+hi_mpi: Unknown symbol TdeOsiOpen (err 0)
+hi_mpi: Unknown symbol ndpt_rtp_sendto (err 0)
+hi_mpi: Unknown symbol TdeOsiClose (err 0)
+hi_mpi: Unknown symbol CMPI_PROC_RemoveModule (err 0)
+hi_mpi: Unknown symbol CMPI_MEM_UnmapAndReleaseMem (err 0)
+hi_mpi: Unknown symbol ndpt_reg_revfun (err 0)
+hi_mpi: Unknown symbol free_dmalli_space (err 0)
+hi_mpi: Unknown symbol CMPI_MEM_ReleaseMem (err 0)
+hi_mpi: Unknown symbol TdeOsiQuickCopy (err 0)
+hi_mpi: Unknown symbol ndpt_create_link (err 0)
+hi_mpi: Unknown symbol CMPI_UserCopy (err 0)
+hi_mpi: Unknown symbol hi_gpio_write_bit (err 0)
+hi_mpi: Unknown symbol dmac_channel_free (err 0)
+hi_mpi: Unknown symbol CMPI_MEM_AllocAndMapMem (err 0)
+hi_mpi: Unknown symbol dmac_channel_allocate (err 0)
+hi_mpi: Unknown symbol dmac_start_llim2p (err 0)
+hi_mpi: Unknown symbol ndpt_destroy_link (err 0)
+hi_mpi: Unknown symbol CMPI_MEM_MapMem (err 0)
+hi_mpi: Unknown symbol dmac_channelstart (err 0)
+hi_mpi: Unknown symbol CMPI_STAT_GetTick (err 0)
+hi_mpi: Unknown symbol allocate_dmalli_space (err 0)
+hi_mpi: Unknown symbol CMPI_MEM_AllocMem (err 0)
+hi_mpi: Unknown symbol CMPI_ProcModuleWrite (err 0)
+hi_mpi: Unknown symbol ndpt_modify_net_para (err 0)
+hi_mpi: Unknown symbol TdeOsiCancelJob (err 0)
+hi_mpi: Unknown symbol HI_LogOut (err 0)
+hi_mpi: Unknown symbol dmac_buildllim2p (err 0)
+hi_mpi: Unknown symbol TdeOsiEndJob (err 0)
+hi_mpi: Unknown symbol CMPI_UnRegisterDevice (err 0)
+hi_mpi: Unknown symbol TdeOsiBeginJob (err 0)
+hi_mpi: Unknown symbol CMPI_RegisterDevice (err 0)
+hi_mpi: Unknown symbol CMPI_MEM_UnmapMem (err 0)
+hi_mpi: Unknown symbol SYS_GetChipVersion (err 0)
+insmod: can't insert 'hi_mpi.ko': unknown symbol in module, or unknown parameter
+hi_svdec: Unknown symbol klib_flush_cache (err 0)
+hi_svdec: Unknown symbol MEM_MapRegisterAddr (err 0)
+hi_svdec: Unknown symbol InsertImgToVoQueue (err 0)
+hi_svdec: Unknown symbol MEM_Vir2Phy (err 0)
+hi_svdec: Unknown symbol dprint (err 0)
+hi_svdec: Unknown symbol VCTRL_UnRegisterSoftDecoder (err 0)
+hi_svdec: Unknown symbol VCTRL_GetChanIDByCtx (err 0)
+hi_svdec: Unknown symbol ResetVoQueue (err 0)
+hi_svdec: Unknown symbol CMPI_UnRegisterDevice (err 0)
+hi_svdec: Unknown symbol VCTRL_RegisterSoftDecoder (err 0)
+hi_svdec: Unknown symbol CMPI_RegisterDevice (err 0)
+insmod: can't insert 'hi_svdec.ko': unknown symbol in module, or unknown parameter
+hi_tuner: Unknown symbol gpio_i2c_write_ext_NoSTOP (err 0)
+hi_tuner: Unknown symbol hi_gpio_write_bit (err 0)
+hi_tuner: Unknown symbol CMPI_UserCopy (err 0)
+hi_tuner: Unknown symbol HI_LogOut (err 0)
+hi_tuner: Unknown symbol hi_gpio_dirset_bit (err 0)
+hi_tuner: Unknown symbol HI_I2C_Write_NoSTOP (err 0)
+hi_tuner: Unknown symbol gpio_i2c_read_ext (err 0)
+hi_tuner: Unknown symbol SYS_GetChipVersion (err 0)
+hi_tuner: Unknown symbol CMPI_PROC_AddModule (err 0)
+hi_tuner: Unknown symbol gpio_i2c_write_ext (err 0)
+hi_tuner: Unknown symbol CMPI_PROC_RemoveModule (err 0)
+hi_tuner: Unknown symbol HI_I2C_Read (err 0)
+hi_tuner: Unknown symbol HI_I2C_ReadDirectly (err 0)
+hi_tuner: Unknown symbol gpio_i2c_read_ext_directly (err 0)
+hi_tuner: Unknown symbol HI_I2C_Write (err 0)
+hi_tuner: Unknown symbol CMPI_STAT_Event (err 0)
+hi_tuner: Unknown symbol CMPI_UnRegisterDevice (err 0)
+hi_tuner: Unknown symbol CMPI_RegisterDevice (err 0)
+insmod: can't insert 'hi_tuner.ko': unknown symbol in module, or unknown parameter
+hifb: Unknown symbol TdeCalScaleRect (err 0)
+hifb: Unknown symbol TdeOsiCancelJob (err 0)
+hifb: Unknown symbol TdeOsiQuickFill (err 0)
+hifb: Unknown symbol TdeOsiEndJob (err 0)
+hifb: Unknown symbol TdeOsiWaitAllDone (err 0)
+hifb: Unknown symbol tde_get_procentry (err 0)
+hifb: Unknown symbol TdeOsiBlit (err 0)
+hifb: Unknown symbol TdeOsiBeginJob (err 0)
+hifb: Unknown symbol TdeOsiWaitForDone (err 0)
+hifb: Unknown symbol HIFB_DRV_GetOps (err 0)
+hifb: Unknown symbol TdeOsiEnableRegionDeflicker (err 0)
+hifb: Unknown symbol TdeOsiSetDeflickerLevel (err 0)
+insmod: can't insert 'hifb.ko': unknown symbol in module, or unknown parameter
+insmod: can't insert 'hi_sci.ko': No such file or directory
+hi_ir: Unknown symbol HI_LogOut (err 0)
+insmod: can't insert 'hi_ir.ko': unknown symbol in module, or unknown parameter
+hi_cipher: Unknown symbol CMPI_MEM_AllocAndMapMem (err 0)
+hi_cipher: Unknown symbol CMPI_MEM_UnmapAndReleaseMem (err 0)
+hi_cipher: Unknown symbol HI_LogOut (err 0)
+hi_cipher: Unknown symbol SYS_GetChipVersion (err 0)
+hi_cipher: Unknown symbol CMPI_UnRegisterDevice (err 0)
+hi_cipher: Unknown symbol CMPI_RegisterDevice (err 0)
+insmod: can't insert 'hi_cipher.ko': unknown symbol in module, or unknown paramehi_e2prom: Unknown symbol HI_I2C_WriteConfig (err 0)
+ter
+hi_e2prom: Unknown symbol HI_LogOut (err 0)
+hi_e2prom: Unknown symbol CMPI_PROC_AddModule (err 0)
+hi_e2prom: Unknown symbol CMPI_PROC_RemoveModule (err 0)
+hi_e2prom: Unknown symbol HI_I2C_Read (err 0)
+hi_e2prom: Unknown symbol HI_I2C_Write (err 0)
+hi_e2prom: Unknown symbol CMPI_UnRegisterDevice (err 0)
+hi_e2prom: Unknown symbol CMPI_RegisterDevice (err 0)
+insmod: can't insert 'hi_e2prom.ko': unknown symbol in module, or unknown parameter
+hi_keyled: Unknown symbol hi_gpio_dirget_bit (err 0)
+hi_keyled: Unknown symbol hi_gpio_write_bit (err 0)
+hi_keyled: Unknown symbol hi_gpio_read_bit (err 0)
+hi_keyled: Unknown symbol CMPI_UserCopy (err 0)
+hi_keyled: Unknown symbol HI_LogOut (err 0)
+hi_keyled: Unknown symbol hi_gpio_dirset_bit (err 0)
+hi_keyled: Unknown symbol CMPI_ProcModuleWrite (err 0)
+hi_keyled: Unknown symbol SYS_GetChipVersion (err 0)
+hi_keyled: Unknown symbol CMPI_PROC_AddModule (err 0)
+hi_keyled: Unknown symbol CMPI_PROC_RemoveModule (err 0)
+hi_keyled: Unknown symbol CMPI_UnRegisterDevice (err 0)
+hi_keyled: Unknown symbol CMPI_RegisterDevice (err 0)
+insmod: can't insert 'hi_keyled.ko': unknown symbol in module, or unknown parameter
+Load jpeg6b.ko success.         (SDK_VERSION:[jpeg6bv1.0] Build Time:[Mar 28 2013, 10:06:27])
+------------[ cut here ]------------
+WARNING: at fs/proc/generic.c:317 __xlate_proc_name+0xcc/0xd4()
+name 'graphics/jpeg'
+Modules linked in: jpeg(+) hi_wdg hi_mmz hi_media
+[<c003268c>] (unwind_backtrace+0x0/0xfc) from [<c00457ac>] (warn_slowpath_common+0x54/0x64)
+[<c00457ac>] (warn_slowpath_common+0x54/0x64) from [<c0045850>] (warn_slowpath_fmt+0x30/0x40)
+[<c0045850>] (warn_slowpath_fmt+0x30/0x40) from [<c00e5520>] (__xlate_proc_name+0xcc/0xd4)
+[<c00e5520>] (__xlate_proc_name+0xcc/0xd4) from [<c00e59cc>] (__proc_create+0x4c/0xdc)
+[<c00e59cc>] (__proc_create+0x4c/0xdc) from [<c00e61b4>] (proc_mkdir_mode+0x24/0x5c)
+[<c00e61b4>] (proc_mkdir_mode+0x24/0x5c) from [<bf977a6c>] (JPEG_Proc_init+0x2c/0xc4 [jpeg])
+[<bf977a6c>] (JPEG_Proc_init+0x2c/0xc4 [jpeg]) from [<bf97b074>] (init_module+0x74/0x170 [jpeg])
+[<bf97b074>] (init_module+0x74/0x170 [jpeg]) from [<c002b38c>] (do_one_initcall+0x34/0x1c0)
+[<c002b38c>] (do_one_initcall+0x34/0x1c0) from [<c006f3a8>] (sys_init_module+0xb0/0x1c0)
+[<c006f3a8>] (sys_init_module+0xb0/0x1c0) from [<c002bec0>] (ret_fast_syscall+0x0/0x30)
+---[ end trace 6042c0e1c92bc7b7 ]---
+failed to create the proc graphics/jpeg !
+insmod: can't insert 'png.ko': No such file or directory
+Module len 51164 truncated
+insmod: can't insert '/kmod/usb/ehci-hcd.ko': invalid module format
+ohci_hcd: version magic '2.6.35.7_hi3716m mod_unload ARMv7 ' should be '2.6.35.7_hisilicon mod_unload ARMv7 '
+insmod: can't insert '/kmod/usb/ohci-hcd.ko': invalid module format
+ufsd: module license 'Commercial product' taints kernel.
+Disabling lock debugging due to kernel taint
+ufsd: driver (8.6, Jul 12 2012 16:31:03, LBD=ON, delalloc, acl, ioctl, bdi) loaded at bf988000
+NTFS (with native replay) support included
+optimized: speed
+Build_for__Huawei_stb_2011-03-28_U86_r185589_b2
+
+/
+Welcome to HiLinux.

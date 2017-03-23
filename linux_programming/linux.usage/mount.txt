@@ -1,0 +1,5 @@
+ µ¼³ö rootfs
+		1.STB ctrl+c, ifconfig eth0 192.168.1.57
+		2.STB mount -t nfs -o nolock 192.168.1.242:/home/server242/chenmz/xingzhou/rootfs   /mnt
+		3. STB mount -o loop /dev/mtdblock11     /mnt/rootfs
+		4.STB tar  zcvf  rootfs.tar.gz    rootfs/

@@ -1,0 +1,2 @@
+http://blog.csdn.net/jianchaolv/article/details/7718588
+https://www.ibm.com/developerworks/cn/linux/l-rcu/

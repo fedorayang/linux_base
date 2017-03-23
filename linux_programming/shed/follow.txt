@@ -1,0 +1,13 @@
+完全编译sdk A1
+	管理员权限运行ubuntu
+	samba加密
+moudle 查询，操作，原理
+sdk运行错误解决
+编译iwconfig
+wifi运行，测试
+编译wpa_supplicant
+学习wifi标准,wpa-supplicant工具手册
+前面板驱动
+tuner驱动
+SCH V1<->V2
+shell
